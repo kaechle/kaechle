@@ -7,4 +7,4 @@ junk
 old or discarded articles that are considered useless or of little value.
 "the web is full of junk"
 
-On a mission to put less junk on the web. 
+On a mission to put less junk into the world. 
