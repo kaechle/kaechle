@@ -1,0 +1,58 @@
+{
+  "name": "prototyper",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write --plugin-search-dir=. ./**/*.svelte"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "postcss": "^8.4.19",
+    "postcss-load-config": "^4.0.1",
+    "postcss-nested": "^6.0.0",
+    "postcss-preset-env": "^7.8.3",
+    "prettier": "^2.8.1",
+    "prettier-plugin-svelte": "^2.8.1",
+    "svelte": "^3.54.0",
+    "svelte-preprocess": "^4.10.7",
+    "vite": "^3.2.5"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 1
+      },
+      "postcss-nested": {},
+      "autoprefixer": {}
+    }
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "plugins": [
+      "./node_modules/prettier-plugin-svelte"
+    ],
+    "pluginSearchDirs": [
+      "."
+    ],
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
+  },
+  "type": "module"
+}
